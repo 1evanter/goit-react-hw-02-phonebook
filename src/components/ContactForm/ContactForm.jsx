@@ -1,15 +1,18 @@
 import { Formik } from 'formik';
 import { StyledForm, StyledField } from './ContactForm.styled';
 
-export const ContactForm = () => {
+export const ContactForm = ({onAdd}) => {
     return (
         <Formik
-      initialValues={{
-        name: '',
-        number: '',
-      }}
+            initialValues={{
+                name: '',
+                number: '',
+            }}
            
-            onSubmit={values => console.log(values)}
+            onSubmit={(values, actions) =>
+               { onAdd(values);
+    actions.resetForm()}
+            }
          
         >
       <StyledForm>
