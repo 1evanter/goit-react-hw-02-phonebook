@@ -1,9 +1,9 @@
 import { ContactItem } from "components/ContactItem/ContactItem"
 import { List } from "./ContactList.styled" 
-export const ContactList = ({items}) => {
+export const ContactList = ({contacts, onDelete}) => {
     return (
         <List >
-            <ContactItem items={items} />
+            <ContactItem items={contacts} onDelete={ onDelete} />
     </List>
     )
 
