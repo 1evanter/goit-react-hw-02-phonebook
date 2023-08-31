@@ -18,7 +18,6 @@ p {
   margin: 0;
 }
 
-
 ul,
 ol,
 a {
@@ -26,12 +25,6 @@ a {
   padding: 0;
   list-style: none;
 };
-
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
 
 button {
   cursor: pointer;

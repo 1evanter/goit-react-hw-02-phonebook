@@ -27,6 +27,8 @@ color: 27374D;
 background-color: #DDE6ED;
 border: 1px solid #526D82;
 border-radius: 3px;
+padding: 3px;
+min-width: 80px;
 `
 
 export const Label = styled.label`

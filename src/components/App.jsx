@@ -56,14 +56,14 @@ export class App extends Component {
 
   render() {
     return (
-      <>
+      <div style={{margin: "30px"}}>
         <h1>Phonebook</h1>
         <ContactForm onAdd={this.addContact} />
-        <h2>Contacts</h2>
+        <h2 style={{marginBottom: "10px"}}>Contacts</h2>
         <Filter onChange={this.changeFilter} value={this.state.filter} />
         <ContactList contacts={this.filteredList()} onDelete={this.handleDelete} />
         <GlobalStyle/>
-      </>
+      </div>
   )
 }
 
