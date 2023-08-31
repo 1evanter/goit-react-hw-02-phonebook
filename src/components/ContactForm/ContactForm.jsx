@@ -1,5 +1,6 @@
 import { Formik } from 'formik';
 import { StyledForm, StyledField } from './ContactForm.styled';
+import { nanoid } from 'nanoid';
 
 export const ContactForm = ({onAdd}) => {
     return (
@@ -10,7 +11,7 @@ export const ContactForm = ({onAdd}) => {
             }}
            
             onSubmit={(values, actions) =>
-               { onAdd(values);
+               { onAdd({...values, id: nanoid()});
     actions.resetForm()}
             }
          
