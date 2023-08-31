@@ -28,3 +28,7 @@ background-color: #DDE6ED;
 border: 1px solid #526D82;
 border-radius: 3px;
 `
+
+export const Label = styled.label`
+font-weight: 500;
+`
