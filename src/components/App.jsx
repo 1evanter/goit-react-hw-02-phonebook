@@ -8,23 +8,24 @@ export class App extends Component {
     contacts: [],
   }
   
-//   handleChange = evt => {
-//     const { name, value } = evt.currentTarget;
-   
-//     this.setState({ [name]: value });
-// }
+  
+  addContact = newContact => {
+    this.setState(prevState => {
+      return {
+        contacts: [...prevState.contacts, newContact]
+      }
+    }
 
-//   handleSubmit = evt => {
-//     evt.preventDefault();
-//     console.log(this.state)
-//   }
+    )
+    console.log(newContact)
+    console.log("vse ok")
+  }
   
   render() {
     return (
       <>
         
-        <ContactForm/>
-        {/* <ContactForm handleSubmit={this.handleSubmit} handleChange={this.handleChange} /> */}
+        <ContactForm onAdd={ this.addContact} />
 
         <GlobalStyle/>
       </>
