@@ -1,10 +1,10 @@
 import { ContactItem } from "components/ContactItem/ContactItem"
-
+import { List } from "./ContactList.styled" 
 export const ContactList = ({items}) => {
     return (
-        <ul >
+        <List >
             <ContactItem items={items} />
-    </ul>
+    </List>
     )
 
 }
