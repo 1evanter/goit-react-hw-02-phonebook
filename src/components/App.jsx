@@ -1,6 +1,7 @@
 import { Component } from "react"
 import { ContactForm } from "./ContactForm/ContactForm";
 import { GlobalStyle } from "components/GlobalStyle";
+import { ContactList } from "./ContactList/ContactList";
 
 export class App extends Component {
 
@@ -25,8 +26,9 @@ export class App extends Component {
     return (
       <>
         
-        <ContactForm onAdd={ this.addContact} />
-
+        <ContactForm onAdd={this.addContact} />
+        <h2>Contacts</h2>
+        <ContactList items={this.state.contacts} />
         <GlobalStyle/>
       </>
   )
