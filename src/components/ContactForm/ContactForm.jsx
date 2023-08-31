@@ -1,5 +1,5 @@
 import { Formik } from 'formik';
-import { StyledForm, StyledField } from './ContactForm.styled';
+import { StyledForm, StyledField, Button } from './ContactForm.styled';
 import { nanoid } from 'nanoid';
 
 export const ContactForm = ({onAdd}) => {
@@ -31,7 +31,7 @@ export const ContactForm = ({onAdd}) => {
                     title="Phone number must be digits and can contain spaces, dashes, parentheses and can start with +"
                     required />
                 </label>
-        <button type="submit">Add contact</button>
+        <Button type="submit">Add contact</Button>
       </StyledForm>
     </Formik>
     )

@@ -2,16 +2,29 @@ import styled from "styled-components";
 import { Form, Field } from 'formik';
 
 export const StyledForm = styled(Form)`
-max-width: 500px;
+max-width: 300px;
 display: flex;
-
+flex-wrap: wrap;
+margin-top: 15px;
+margin-bottom: 15px;
 padding: 15px;
 gap: 15px;
-margin: 30px;
-// justify-content: space-between;
 align-items: center;
-border: 2px dashed black;
+border: 3px dashed #526D82;
 `
 export const StyledField = styled(Field)`
+display: flex;
+flex-direction: column;
+margin-top: 3px;
+border: 1px solid #526D82;
+border-radius: 3px;
+outline: none;
+padding: 4px;
+`
 
+export const Button = styled.button`
+color: 27374D;
+background-color: #DDE6ED;
+border: 1px solid #526D82;
+border-radius: 3px;
 `
